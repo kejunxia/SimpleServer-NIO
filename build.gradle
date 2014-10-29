@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+def srcJava = 'src/main/java'
+
+sourceSets {
+    main {
+        java {
+            srcDir srcJava
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
+dependencies {
+}
