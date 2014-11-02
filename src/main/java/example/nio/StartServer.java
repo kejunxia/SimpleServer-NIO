@@ -1,9 +1,8 @@
-package main.java;
+package example.nio;
 
 import java.io.IOException;
-import java.net.InetSocketAddress;
 
-public class Main {
+public class StartServer {
     static final int PORT = 9999;
 
     public static void main(String[] args) {
@@ -19,12 +18,5 @@ public class Main {
             e.printStackTrace();
         }
 
-        try {
-            SimpleClient client = new SimpleClient();
-            client.connect(new InetSocketAddress("localhost", PORT));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
-
 }
